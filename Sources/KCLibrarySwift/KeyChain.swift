@@ -4,6 +4,8 @@ import KeychainSwift
 
 public struct KeyChainKC {
     
+    public init() {}
+    
     @discardableResult public func saveKC(_ key: String, value: String) -> Bool {
         if let data = value.data(using: .utf8) {
             let keychain = KeychainSwift()
